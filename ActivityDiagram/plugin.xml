@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.basicactivitydiagram"
+		description="Basic Activity Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.basicactivitydiagram.BasicActivityDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.basicactivitydiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.basicactivitydiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.basicactivitydiagram.actionset1.BasicActivityDiagramActionControl"
+					actionType="generalAction"
+					label="Basic Activity Diagram"
+					tooltip="Basic Activity Diagram"
+					style="normal"
+          icon="icons/icon.png"
+					toolbarPath="com.vp.plugin.sample.basicactivitydiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.basicactivitydiagram.actions.BasicActivityDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
